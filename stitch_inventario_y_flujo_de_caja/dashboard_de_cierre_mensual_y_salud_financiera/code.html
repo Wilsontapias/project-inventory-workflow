@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-lowest":"#ffffff","outline-variant":"#c6c6cd","on-tertiary-fixed":"#001a42","secondary-fixed-dim":"#bcc7de","surface-tint":"#565e74","surface-container":"#e5eeff","primary-container":"#131b2e","surface-container-highest":"#d3e4fe","on-background":"#0b1c30","error":"#ba1a1a","surface-container-high":"#dce9ff","on-primary-container":"#7c839b","inverse-primary":"#bec6e0","background":"#f8f9ff","tertiary-container":"#001a42","on-tertiary":"#ffffff","on-primary-fixed-variant":"#3f465c","on-secondary-fixed":"#111c2d","on-secondary-fixed-variant":"#3c475a","surface-variant":"#d3e4fe","secondary-fixed":"#d8e3fb","surface-container-low":"#eff4ff","on-surface":"#0b1c30","error-container":"#ffdad6","inverse-surface":"#213145","surface-bright":"#f8f9ff","on-primary":"#ffffff","tertiary-fixed":"#d8e2ff","surface":"#f8f9ff","primary":"#000000","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#adc6ff","on-secondary-container":"#586377","on-tertiary-fixed-variant":"#004395","primary-fixed":"#dae2fd","secondary-container":"#d5e0f8","secondary":"#545f73","tertiary":"#000000","surface-dim":"#cbdbf5","on-error":"#ffffff","on-surface-variant":"#45464d","outline":"#76777d","primary-fixed-dim":"#bec6e0","on-secondary":"#ffffff","on-primary-fixed":"#131b2e","on-error-container":"#93000a","on-tertiary-container":"#3980f4"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"2rem",gutter:"1rem",margin:"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"0.75rem","space-lg":"1.25rem"},fontFamily:{"title-md":["Inter"],"numeric-table":["Roboto Mono"],"title-lg":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"numeric-metric":["Roboto Mono"],"headline-lg":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"]},fontSize:{"title-md":["14px",{lineHeight:"20px",fontWeight:"600"}],"numeric-table":["13px",{lineHeight:"18px",fontWeight:"500"}],"title-lg":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"numeric-metric":["28px",{lineHeight:"34px",fontWeight:"700"}],"headline-lg":["30px",{lineHeight:"38px",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-margin pt-margin pb-space-lg flex items-center gap-space-sm"><img alt="Logo Inventario y Flujo de Caja" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrC6MaBw2JcTB8Wmdq6KSZGDrJquiumMmpJ6G0cTOeFvHVUu33e1LErEmFv-CoYQxNJTbWXOIBb1SMbTABuV11uZKRQsnuLHynxhfZPkAutEmn-ZwJnPmXE7DHyDpK_ZCriRvXIHV8ppOBMRI4rPkb9kqmtyG5SIb6cfucf8GmH4494ccdnWpi7V-9WeiIJVJgP0YQO7lT7xGuE9g4t5WuT3mW7u4Waxyz26TAP8zl-v"/><div class="flex flex-col"><span class="font-title-md text-title-md text-surface tracking-tight leading-tight">Inventario y Flujo de Caja</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Hardware & Enterprise IT</span></div></div><div class="px-margin pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Operaciones & Control</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-surface-container-highest text-on-surface font-title-md rounded-xl"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-colors bg-surface-container-highest text-on-surface font-title-md rounded-xl" data-path="dashboard-cierre" href="#"><span class="material-symbols-outlined text-[20px]">pie_chart</span><span class="font-body-md text-body-md">Dashboard Cierre</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="catalogo-de-inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Catálogo de Inventario</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="alertas-y-rotacion" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span class="font-body-md text-body-md">Alertas y Rotación</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="directorio-de-proveedores" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="font-body-md text-body-md">Directorio de Proveedores</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="ordenes-sugeridas" href="#"><span class="material-symbols-outlined text-[20px]">shopping_cart_checkout</span><span class="font-body-md text-body-md">Órdenes Sugeridas</span></a></nav></div><div class="p-margin m-space-md bg-inverse-surface rounded-xl flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Período Activo</span><span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container mr-1.5"></span>Cierre en Progreso</span></div><p class="font-title-md text-title-md text-surface">Octubre 2024</p><div class="flex items-center justify-between pt-space-xs text-on-primary-container"><span class="font-body-sm text-body-sm">Mesa de Control IT</span><span class="font-numeric-table text-numeric-table">Ext. 4081</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="font-label-md text-label-md text-on-surface-variant">Gestión Financiera & Stock</span><span class="text-outline-variant">/</span><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-lg text-on-surface"><span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span><span class="font-title-md text-title-md">Octubre 2024</span><span class="material-symbols-outlined text-[16px] text-secondary">expand_more</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-lg"><span class="font-label-sm text-label-sm text-on-surface-variant">Divisa Base:</span><span class="font-title-md text-title-md text-on-surface">COP ($)</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-numeric-table">TRM ~$4.180</span></div><button class="relative p-space-xs rounded-xl hover:bg-surface-container-low text-secondary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 flex items-center justify-center w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px]">4</span></button><div class="flex items-center gap-space-md pl-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLwWDEGVgcHS8CIwFM2-9U_qSKoVHOacE9IXHSQEmHmgVtYiDDwwXgE0C3M3X__JiQg8yl1B8XljJj0_dWiFi9otHHZjON8AqBoLKpJjshe_KIHGZvSgUDts2f3rWAO8GBLnBsBKVLesyYt6B5cQHAl65VP5Uw95MvOj2-cmcI_SqoPnJEJdUeZpweqO6qmRssJ6h-wRnhGub0Fmclqm17ygym70DUy9Q5VaOBWlY"/><div class="flex flex-col text-left"><span class="font-title-md text-title-md text-on-surface leading-snug">Carlos Mendoza</span><span class="font-body-sm text-body-sm text-secondary leading-none">Gerente de Operaciones y Finanzas</span></div></div></div></div></header><main class="w-full pt-16 bg-background px-margin"><div class="flex flex-col w-full">
+<!-- Top View Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Control Presupuestario & Existencias</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-medium">Corte Fiscal Q4</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Cierre Mensual & Salud Financiera — Octubre 2024</h1>
+<p class="font-body-md text-body-md text-secondary mt-0.5 max-w-3xl">
+        Evaluación consolidada de capital inmovilizado, rotación de existencias y capacidad de reabastecimiento en Pesos Colombianos (COP).
+      </p>
+</div>
+<!-- Top Action Buttons -->
+<div class="flex items-center gap-space-sm self-start lg:self-center shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors shadow-sm font-title-md text-title-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+<span>Exportar Informe de Cierre (PDF/Excel)</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-inverse-surface transition-colors shadow-sm font-title-md text-title-md" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Simular Escenario de Cierre</span>
+</button>
+</div>
+</div>
+<!-- Dismissible Fiscal Warning Notification Banner -->
+<div class="mb-space-lg p-space-md rounded-xl bg-surface-container-high relative overflow-hidden transition-all duration-300" id="banner-cierre">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-error-container text-error flex items-center justify-center shrink-0 mt-0.5 md:mt-0">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Aviso de Cierre Fiscal Programado</span>
+<span class="font-label-sm text-label-sm text-error bg-error-container/60 px-2 py-0.5 rounded font-semibold">T-4 Días</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            Faltan 4 días para el corte del 31 de Octubre. <strong class="text-on-surface font-semibold">6 líneas de servidores</strong> presentan quiebre inminente y <strong class="text-on-surface font-semibold">$ 148.500.000 COP</strong> en inventario superan los 90 días de permanencia sin rotación.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 pl-12 md:pl-0">
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-primary text-on-primary hover:bg-inverse-surface font-title-md text-title-md transition-colors shadow-sm" type="button">
+<span>Revisar Alertas Críticas</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="p-1 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" onclick="document.getElementById('banner-cierre').style.display='none'" title="Cerrar notificación" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row of Executive Financial KPI Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-gutter mb-space-xl">
+<!-- KPI 1: Valor Total de Inventario -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Valor Total Inventario</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">inventory_2</span>
+</div>
+<div class="font-numeric-metric text-numeric-metric text-on-surface tracking-tight mb-space-xs">$ 1.482.350.000</div>
+<div class="inline-flex items-center gap-1 text-on-tertiary-container bg-surface-container px-2 py-0.5 rounded-full font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+3.4% vs. Sep 2024</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary pt-space-md mt-space-sm border-t border-surface-container-low">
+        Capital activo en bodega central y 3 centros de distribución regional.
+      </p>
+</div>
+<!-- KPI 2: Capital Inmovilizado -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Capital Inmovilizado (>90 Días)</span>
+<span class="material-symbols-outlined text-error text-[20px]">history_toggle_off</span>
+</div>
+<div class="font-numeric-metric text-numeric-metric text-on-surface tracking-tight mb-space-xs">$ 148.500.000</div>
+<div class="inline-flex items-center gap-1 text-error bg-error-container px-2 py-0.5 rounded-full font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>10.02% del total de activos</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary pt-space-md mt-space-sm border-t border-surface-container-low">
+        Concentrado en componentes de gen anterior y switches perimetrales.
+      </p>
+</div>
+<!-- KPI 3: Capacidad de Reorden Inmediata -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Flujo Disponible Reorden</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance_wallet</span>
+</div>
+<div class="font-numeric-metric text-numeric-metric text-on-surface tracking-tight mb-space-xs">$ 320.000.000</div>
+<span class="font-body-sm text-body-sm text-secondary block mb-2">Disponible para OC sugeridas Nov</span>
+<!-- Utilization visual track -->
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full" style="width: 68%" title="Comprometido: 68%"></div>
+<div class="bg-surface-container-high h-full" style="width: 32%" title="Holgura: 32%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-secondary pt-space-xs">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary inline-block"></span>68% Comprometido</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-surface-container-highest inline-block"></span>32% Holgura</span>
+</div>
+</div>
+<!-- KPI 4: Alertas Activas de Stock -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Alertas Activas Stock</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">notifications_active</span>
+</div>
+<div class="font-numeric-metric text-numeric-metric text-on-surface tracking-tight mb-space-xs">14 Productos</div>
+<div class="flex flex-wrap gap-1 mb-2">
+<span class="inline-flex items-center gap-1 bg-error-container text-error px-2 py-0.5 rounded text-[11px] font-semibold">
+            6 Agotamiento Inminente
+          </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded text-[11px] font-semibold">
+            8 Stock Mínimo
+          </span>
+</div>
+</div>
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-on-tertiary-container hover:underline pt-space-xs" href="#">
+<span>Ir a Alertas y Rotación</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- KPI 5: Rotación Promedio de Inventario -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Rotación Promedio</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">sync_alt</span>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-numeric-metric text-numeric-metric text-on-surface">42</span>
+<span class="font-title-lg text-title-lg text-secondary">Días</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim bg-secondary-container px-2 py-0.5 rounded ml-auto text-on-secondary-container">Meta: ≤35d</span>
+</div>
+<div class="inline-flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block"></span>
+<span>Desvío de +7 días sobre objetivo</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary pt-space-md mt-space-sm border-t border-surface-container-low">
+        Cálculo demostrativo según despachos de los últimos 30 días hábiles.
+      </p>
+</div>
+</div>
+<!-- Main Content Layout (7:5 Split) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start pb-space-xl">
+<!-- LEFT COLUMN (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-gutter">
+<!-- Section: Flujo de Caja Proyectado y Reabastecimiento -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md mb-space-md border-b border-surface-container-low">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Proyección Financiera Trimestral</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Flujo de Caja vs. Compromisos de Reabastecimiento</h2>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-on-surface inline-block"></span>
+<span class="font-label-sm text-label-sm text-secondary">Cobranzas</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-on-tertiary-container inline-block"></span>
+<span class="font-label-sm text-label-sm text-secondary">Ventas Est.</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-secondary-fixed-dim inline-block"></span>
+<span class="font-label-sm text-label-sm text-secondary">Compras Sugeridas</span>
+</div>
+</div>
+</div>
+<!-- Custom Comparative Bar Chart (SVG High Precision) -->
+<div class="w-full mb-space-lg">
+<svg class="w-full h-56 text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 540 200">
+<!-- Grid lines -->
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.08" x1="40" x2="520" y1="20" y2="20"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.08" x1="40" x2="520" y1="65" y2="65"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.08" x1="40" x2="520" y1="110" y2="110"></line>
+<line stroke="currentColor" stroke-opacity="0.15" x1="40" x2="520" y1="155" y2="155"></line>
+<!-- Y Axis labels -->
+<text class="text-[9px] fill-current opacity-60 font-mono" text-anchor="end" x="32" y="24">$600M</text>
+<text class="text-[9px] fill-current opacity-60 font-mono" text-anchor="end" x="32" y="69">$400M</text>
+<text class="text-[9px] fill-current opacity-60 font-mono" text-anchor="end" x="32" y="114">$200M</text>
+<text class="text-[9px] fill-current opacity-60 font-mono" text-anchor="end" x="32" y="158">$0</text>
+<!-- GROUP 1: Septiembre (Cerrado) -->
+<g transform="translate(70, 0)">
+<!-- Cobranzas ($440M) -->
+<rect fill="#0b1c30" height="99" rx="3" width="22" x="0" y="56"></rect>
+<!-- Ventas ($480M) -->
+<rect fill="#3980f4" height="108" rx="3" width="22" x="26" y="47"></rect>
+<!-- Compras ($310M) -->
+<rect fill="#bcc7de" height="70" rx="3" width="22" x="52" y="85"></rect>
+<text class="text-[11px] fill-current font-medium" text-anchor="middle" x="37" y="176">Sep 2024</text>
+<text class="text-[9px] fill-current opacity-50" text-anchor="middle" x="37" y="190">Real Cerrado</text>
+</g>
+<!-- GROUP 2: Octubre (Cierre en curso) -->
+<g transform="translate(225, 0)">
+<!-- Cobranzas ($510M) -->
+<rect fill="#0b1c30" height="115" rx="3" width="22" x="0" y="40"></rect>
+<!-- Ventas ($540M) -->
+<rect fill="#3980f4" height="122" rx="3" width="22" x="26" y="33"></rect>
+<!-- Compras ($390M) -->
+<rect fill="#bcc7de" height="88" rx="3" width="22" x="52" y="67"></rect>
+<text class="text-[11px] fill-current font-bold" text-anchor="middle" x="37" y="176">Oct 2024</text>
+<text class="text-[9px] fill-current text-on-tertiary-container font-semibold" text-anchor="middle" x="37" y="190">En Curso</text>
+</g>
+<!-- GROUP 3: Noviembre (Proyectado) -->
+<g transform="translate(380, 0)">
+<!-- Cobranzas ($460M) -->
+<rect fill="#0b1c30" fill-opacity="0.85" height="104" rx="3" stroke="#0b1c30" stroke-dasharray="2 2" width="22" x="0" y="51"></rect>
+<!-- Ventas ($590M) -->
+<rect fill="#3980f4" fill-opacity="0.85" height="133" rx="3" stroke="#3980f4" stroke-dasharray="2 2" width="22" x="26" y="22"></rect>
+<!-- Compras Sugeridas ($320M) -->
+<rect fill="#bcc7de" fill-opacity="0.85" height="72" rx="3" stroke="#bcc7de" stroke-dasharray="2 2" width="22" x="52" y="83"></rect>
+<text class="text-[11px] fill-current font-medium" text-anchor="middle" x="37" y="176">Nov 2024</text>
+<text class="text-[9px] fill-current opacity-50" text-anchor="middle" x="37" y="190">Proyección</text>
+</g>
+</svg>
+</div>
+<!-- Short-term Obligations Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Obligaciones a Corto Plazo</span>
+<div class="font-title-md text-title-md text-on-surface">Pagos pendientes a Mayoristas IT (Dell, Lenovo, APC)</div>
+<p class="font-body-sm text-body-sm text-secondary">Vencimientos previstos a 15 y 30 días calendario.</p>
+</div>
+</div>
+<div class="flex flex-col sm:items-end shrink-0 pl-14 sm:pl-0">
+<span class="font-numeric-metric text-[22px] leading-tight text-on-surface">$ 215.400.000</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">COP Total Exigible</span>
+</div>
+</div>
+</div>
+<!-- Section: Productos de Mayor Impacto en Capital Inmovilizado -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm mb-space-md border-b border-surface-container-low">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-semibold">Crítico > 90 Días</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Productos de Mayor Impacto en Capital Inmovilizado</h2>
+</div>
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-container-highest font-title-md text-title-md text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">price_change</span>
+<span>Ver Plan de Liquidación</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase">
+<th class="py-2.5 px-space-sm rounded-l">Producto / Línea IT</th>
+<th class="py-2.5 px-space-sm">Categoría</th>
+<th class="py-2.5 px-space-sm text-right">Permanencia</th>
+<th class="py-2.5 px-space-sm text-right">Valor Inmovilizado</th>
+<th class="py-2.5 px-space-sm text-center rounded-r">Acción Sugerida</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md text-on-surface">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-sm">
+<div class="font-title-md text-title-md text-on-surface">Servidor Dell PowerEdge R740 2U</div>
+<div class="font-numeric-table text-numeric-table text-secondary">SKU: SRV-DEL-R740-09 | 4 Unid.</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">Servidores</span>
+</td>
+<td class="py-3 px-space-sm text-right font-numeric-table text-numeric-table text-error font-semibold">
+                  112 Días
+                </td>
+<td class="py-3 px-space-sm text-right font-numeric-table text-numeric-table font-semibold">
+                  $ 48.000.000 COP
+                </td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-error-container text-error font-label-sm text-label-sm font-semibold">Bundle Cloud 15% Desc</span>
+</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-sm">
+<div class="font-title-md text-title-md text-on-surface">Lote Memoria RAM DDR4 64GB ECC 3200MHz</div>
+<div class="font-numeric-table text-numeric-table text-secondary">SKU: MEM-KNG-D464-ECC | 32 Unid.</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">Componentes</span>
+</td>
+<td class="py-3 px-space-sm text-right font-numeric-table text-numeric-table text-error font-semibold">
+                  105 Días
+                </td>
+<td class="py-3 px-space-sm text-right font-numeric-table text-numeric-table font-semibold">
+                  $ 22.000.000 COP
+                </td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Reasignar a Serv. Upgrades</span>
+</td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-sm">
+<div class="font-title-md text-title-md text-on-surface">UPS Schneider APC Smart-UPS RT 10kVA</div>
+<div class="font-numeric-table text-numeric-table text-secondary">SKU: UPS-APC-RT10K-OL | 2 Unid.</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">UPS & Energía</span>
+</td>
+<td class="py-3 px-space-sm text-right font-numeric-table text-numeric-table text-error font-semibold">
+                  98 Días
+                </td>
+<td class="py-3 px-space-sm text-right font-numeric-table text-numeric-table font-semibold">
+                  $ 38.000.000 COP
+                </td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-error-container text-error font-label-sm text-label-sm font-semibold">Oferta Proyecto Minero</span>
+</td>
+</tr>
+<!-- Item 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-sm">
+<div class="font-title-md text-title-md text-on-surface">Switch Cisco Catalyst 9300 48P PoE+</div>
+<div class="font-numeric-table text-numeric-table text-secondary">SKU: NET-CIS-C9300-48P | 3 Unid.</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm">Networking</span>
+</td>
+<td class="py-3 px-space-sm text-right font-numeric-table text-numeric-table text-error font-semibold">
+                  94 Días
+                </td>
+<td class="py-3 px-space-sm text-right font-numeric-table text-numeric-table font-semibold">
+                  $ 40.500.000 COP
+                </td>
+<td class="py-3 px-space-sm text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Venta Cruzada Laptops B2B</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm border-t border-surface-container-low">
+<span class="font-body-sm text-body-sm text-secondary">
+            Representa el <strong>69.3%</strong> de la totalidad del capital inmovilizado evaluado.
+          </span>
+<button class="font-title-md text-title-md text-on-tertiary-container hover:underline inline-flex items-center gap-1" type="button">
+<span>Ver listado completo (18 SKUs)</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<!-- Widget: Estado de Preparación para el Cierre de Período -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md border-b border-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-on-surface">task_alt</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Estado de Preparación de Cierre</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-semibold font-mono">
+            80% Completado
+          </span>
+</div>
+<!-- Checklist List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Step 1 (Done) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-md">
+<div class="w-6 h-6 rounded-full bg-on-tertiary-container text-on-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Conteo Físico de Bodega Central</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">100% OK</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+                1.420 números de serie verificados con escáner RFID en Bodega Principal Funza.
+              </p>
+</div>
+</div>
+<!-- Step 2 (Done) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-md">
+<div class="w-6 h-6 rounded-full bg-on-tertiary-container text-on-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Conciliación de Costos de Importación</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">100% OK</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+                Aranceles DIAN y fletes internacionales liquidados a TRM promedio de $4.180 COP.
+              </p>
+</div>
+</div>
+<!-- Step 3 (Pending) -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex items-start gap-space-md">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 font-label-sm text-label-sm font-bold">
+              3
+            </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Aprobación de Órdenes Prioritarias</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Pendiente 2 de 5</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+                Falta visto bueno de Gerencia Financiera para OC de reabastecimiento crítico Dell EMC.
+              </p>
+<div class="mt-2 flex gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm hover:bg-inverse-surface transition-colors" type="button">
+                  Aprobar Pendientes
+                </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+                  Ver Detalles
+                </button>
+</div>
+</div>
+</div>
+<!-- Step 4 (Pending) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/50 flex items-start gap-space-md">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 font-label-sm text-label-sm font-bold">
+              4
+            </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Generación de Asiento Contable ERP</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Programado</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+                Autoejecutable el 31 de Octubre a las 23:59 con pólizas de amortización.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Widget: Alerta Temprana de Cadena de Suministro y Proveedores -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md border-b border-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-error">local_shipping</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Alerta Temprana de Proveedores</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-error font-semibold">Lead Time Crítico</span>
+</div>
+<!-- Supplier Alert Card -->
+<div class="p-space-md rounded-xl bg-surface-container-high mb-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">schedule</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Tiempos de Entrega Extendidos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                Mayoristas <strong>TechData / TD SYNNEX e Ingram Micro</strong> notifican incremento en plazos de entrega para procesadores Xeon Scalable y switches troncales:
+              </p>
+<div class="mt-2 flex items-center gap-space-xs">
+<span class="font-numeric-table text-numeric-table px-2 py-0.5 rounded bg-surface-container-lowest text-secondary line-through">8 Días</span>
+<span class="material-symbols-outlined text-[16px] text-error">arrow_forward</span>
+<span class="font-numeric-table text-numeric-table px-2 py-0.5 rounded bg-error-container text-error font-bold">21 Días Hábiles</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-secondary">
+<div class="flex items-center justify-between py-1 border-b border-surface-container-low">
+<span>Dell Technologies LATAM:</span>
+<span class="font-numeric-table text-numeric-table text-on-surface">Despacho normal (5-7d)</span>
+</div>
+<div class="flex items-center justify-between py-1 border-b border-surface-container-low">
+<span>Lenovo Enterprise DCG:</span>
+<span class="font-numeric-table text-numeric-table text-error font-semibold">Demora en CPUs (+14d)</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span>Schneider / APC Energía:</span>
+<span class="font-numeric-table text-numeric-table text-on-surface">Baterías en stock local (3d)</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm">
+<a class="w-full inline-flex items-center justify-center gap-1.5 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors font-title-md text-title-md" href="#">
+<span>Abrir Directorio de Proveedores</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Live ERP Sync Micro-status Footer Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative flex items-center justify-center">
+<span class="w-3 h-3 rounded-full bg-on-tertiary-container animate-ping absolute opacity-75"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container relative"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">SAP S/4HANA & WMS Central</span>
+<span class="font-body-sm text-body-sm text-secondary">Sincronización bidireccional activa</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-secondary">Última actualización</span>
+<span class="font-numeric-table text-numeric-table text-on-surface font-semibold">Hoy, 10:14 AM</span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

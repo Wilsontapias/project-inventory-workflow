@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-lowest":"#ffffff","outline-variant":"#c6c6cd","on-tertiary-fixed":"#001a42","secondary-fixed-dim":"#bcc7de","surface-tint":"#565e74","surface-container":"#e5eeff","primary-container":"#131b2e","surface-container-highest":"#d3e4fe","on-background":"#0b1c30","error":"#ba1a1a","surface-container-high":"#dce9ff","on-primary-container":"#7c839b","inverse-primary":"#bec6e0","background":"#f8f9ff","tertiary-container":"#001a42","on-tertiary":"#ffffff","on-primary-fixed-variant":"#3f465c","on-secondary-fixed":"#111c2d","on-secondary-fixed-variant":"#3c475a","surface-variant":"#d3e4fe","secondary-fixed":"#d8e3fb","surface-container-low":"#eff4ff","on-surface":"#0b1c30","error-container":"#ffdad6","inverse-surface":"#213145","surface-bright":"#f8f9ff","on-primary":"#ffffff","tertiary-fixed":"#d8e2ff","surface":"#f8f9ff","primary":"#000000","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#adc6ff","on-secondary-container":"#586377","on-tertiary-fixed-variant":"#004395","primary-fixed":"#dae2fd","secondary-container":"#d5e0f8","secondary":"#545f73","tertiary":"#000000","surface-dim":"#cbdbf5","on-error":"#ffffff","on-surface-variant":"#45464d","outline":"#76777d","primary-fixed-dim":"#bec6e0","on-secondary":"#ffffff","on-primary-fixed":"#131b2e","on-error-container":"#93000a","on-tertiary-container":"#3980f4"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"2rem",gutter:"1rem",margin:"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"0.75rem","space-lg":"1.25rem"},fontFamily:{"title-md":["Inter"],"numeric-table":["Roboto Mono"],"title-lg":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"numeric-metric":["Roboto Mono"],"headline-lg":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"]},fontSize:{"title-md":["14px",{lineHeight:"20px",fontWeight:"600"}],"numeric-table":["13px",{lineHeight:"18px",fontWeight:"500"}],"title-lg":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"numeric-metric":["28px",{lineHeight:"34px",fontWeight:"700"}],"headline-lg":["30px",{lineHeight:"38px",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-margin pt-margin pb-space-lg flex items-center gap-space-sm"><img alt="Logo Inventario y Flujo de Caja" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrC6MaBw2JcTB8Wmdq6KSZGDrJquiumMmpJ6G0cTOeFvHVUu33e1LErEmFv-CoYQxNJTbWXOIBb1SMbTABuV11uZKRQsnuLHynxhfZPkAutEmn-ZwJnPmXE7DHyDpK_ZCriRvXIHV8ppOBMRI4rPkb9kqmtyG5SIb6cfucf8GmH4494ccdnWpi7V-9WeiIJVJgP0YQO7lT7xGuE9g4t5WuT3mW7u4Waxyz26TAP8zl-v"/><div class="flex flex-col"><span class="font-title-md text-title-md text-surface tracking-tight leading-tight">Inventario y Flujo de Caja</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Hardware & Enterprise IT</span></div></div><div class="px-margin pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Operaciones & Control</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-surface-container-highest text-on-surface font-title-md rounded-xl"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="dashboard-cierre" href="#"><span class="material-symbols-outlined text-[20px]">pie_chart</span><span class="font-body-md text-body-md">Dashboard Cierre</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="catalogo-de-inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Catálogo de Inventario</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="alertas-y-rotacion" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span class="font-body-md text-body-md">Alertas y Rotación</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="directorio-de-proveedores" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="font-body-md text-body-md">Directorio de Proveedores</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="ordenes-sugeridas" href="#"><span class="material-symbols-outlined text-[20px]">shopping_cart_checkout</span><span class="font-body-md text-body-md">Órdenes Sugeridas</span></a></nav></div><div class="p-margin m-space-md bg-inverse-surface rounded-xl flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Período Activo</span><span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container mr-1.5"></span>Cierre en Progreso</span></div><p class="font-title-md text-title-md text-surface">Octubre 2024</p><div class="flex items-center justify-between pt-space-xs text-on-primary-container"><span class="font-body-sm text-body-sm">Mesa de Control IT</span><span class="font-numeric-table text-numeric-table">Ext. 4081</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="font-label-md text-label-md text-on-surface-variant">Gestión Financiera & Stock</span><span class="text-outline-variant">/</span><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-lg text-on-surface"><span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span><span class="font-title-md text-title-md">Octubre 2024</span><span class="material-symbols-outlined text-[16px] text-secondary">expand_more</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-lg"><span class="font-label-sm text-label-sm text-on-surface-variant">Divisa Base:</span><span class="font-title-md text-title-md text-on-surface">COP ($)</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-numeric-table">TRM ~$4.180</span></div><button class="relative p-space-xs rounded-xl hover:bg-surface-container-low text-secondary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 flex items-center justify-center w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px]">4</span></button><div class="flex items-center gap-space-md pl-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLwWDEGVgcHS8CIwFM2-9U_qSKoVHOacE9IXHSQEmHmgVtYiDDwwXgE0C3M3X__JiQg8yl1B8XljJj0_dWiFi9otHHZjON8AqBoLKpJjshe_KIHGZvSgUDts2f3rWAO8GBLnBsBKVLesyYt6B5cQHAl65VP5Uw95MvOj2-cmcI_SqoPnJEJdUeZpweqO6qmRssJ6h-wRnhGub0Fmclqm17ygym70DUy9Q5VaOBWlY"/><div class="flex flex-col text-left"><span class="font-title-md text-title-md text-on-surface leading-snug">Carlos Mendoza</span><span class="font-body-sm text-body-sm text-secondary leading-none">Gerente de Operaciones y Finanzas</span></div></div></div></div></header><main class="w-full pt-16 bg-background px-margin"><div class="flex flex-col w-full">
+<!-- Toast Notification Dock -->
+<div class="fixed top-20 right-6 z-50 flex items-start gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-xl border-l-4 border-primary transition-all duration-300 max-w-sm" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-tertiary-container mt-0.5" style="font-variation-settings: 'FILL' 1;">auto_graph</span>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-title-md text-title-md text-on-surface">Algoritmo de Compras Actualizado</span>
+<span class="font-body-sm text-body-sm text-secondary">3 referencias recalculadas con TRM mayorista proyectada ($4.180 COP).</span>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded" onclick="document.getElementById('toastNotification').remove()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Header Section with Breadcrumb Context -->
+<div class="flex flex-col gap-space-md pb-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<span>Abastecimiento Estratégico</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-title-md text-title-md">Algoritmo MRP & Optimización Mayorista</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Órdenes de Compra Sugeridas & Optimización de Proveedores</h1>
+<p class="font-body-lg text-body-lg text-secondary">
+          Recomendaciones algorítmicas de reabastecimiento justificadas por demanda de clientes, punto de reorden y análisis de flujo de caja disponible en Pesos Colombianos (COP).
+        </p>
+</div>
+<!-- Header CTAs -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-title-md text-title-md rounded-xl shadow-sm transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Historial de Aprobaciones</span>
+</button>
+<button class="h-9 px-space-md bg-primary hover:bg-inverse-surface text-on-primary font-title-md text-title-md rounded-xl shadow-md transition-all flex items-center gap-space-xs group" id="btnEmitBatch" type="button">
+<span class="material-symbols-outlined text-[18px] group-hover:scale-110 transition-transform">check_circle</span>
+<span>Aprobar y Emitir Órdenes Seleccionadas (<span id="selectedCounter">3</span>)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Financial Runway & Metrics Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Inversión Total Sugerida</span>
+<span class="font-numeric-metric text-numeric-metric text-on-surface mt-space-xs">$ 118.650.000 <span class="font-label-sm text-label-sm text-secondary font-title-md">COP</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1.5"></span>
+          5 referencias críticas
+        </span>
+<span class="font-body-sm text-body-sm text-secondary">Lote validado por rotación</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-surface-container/30 rounded-full blur-xl pointer-events-none"></div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Impacto en Flujo de Caja</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-numeric-metric text-numeric-metric text-on-surface">37.1%</span>
+<span class="font-body-sm text-body-sm text-secondary">del cupo mensual</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">speed</span>
+</div>
+</div>
+<div class="pt-space-md flex flex-col gap-1.5">
+<div class="w-full bg-surface-container-low rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary-container h-1.5 rounded-full" style="width: 37.1%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-secondary">$320M COP Asignado</span>
+<span class="font-title-md text-label-sm text-on-tertiary-container uppercase tracking-wide">Seguro y Financiable</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Ahorro Estimado por Comparación</span>
+<span class="font-numeric-metric text-numeric-metric text-on-surface mt-space-xs">$ 8.420.000 <span class="font-label-sm text-label-sm text-secondary font-title-md">COP</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">savings</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-0.5 font-label-md text-label-md text-on-tertiary-container bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          6.6% Eficiencia
+        </span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Vs precio promedio plaza</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Plazo Promedio Negociado</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-numeric-metric text-numeric-metric text-on-surface">38</span>
+<span class="font-title-md text-title-md text-on-surface">Días Crédito</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Vencimiento: <strong>Dic 08 - Dic 15</strong></span>
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-label-sm text-label-sm text-on-surface">Sin interés</span>
+</div>
+</div>
+</div>
+<!-- Interactive Data Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-xl">
+<!-- Filter and Bulk Action Bar -->
+<div class="p-space-md bg-surface-container-low/50 flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm flex-1 min-w-[280px]">
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2 text-[18px] text-secondary">search</span>
+<input class="w-full h-9 pl-9 pr-3 rounded-lg bg-surface-container-lowest text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-on-primary-container shadow-xs" placeholder="Filtrar por SKU, modelo o mayorista sugerido..." type="text"/>
+</div>
+<button class="h-9 px-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-secondary hover:text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-xs transition-colors">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Filtros Avanzados</span>
+</button>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-body-sm text-body-sm text-secondary">Mostrando 5 recomendaciones priorizadas</span>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<button class="text-tertiary-container hover:text-primary font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Exportar Matriz MRP (.xlsx)</span>
+</button>
+</div>
+</div>
+<!-- Table Element -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md w-12 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" id="selectAllCheckbox" type="checkbox"/>
+</th>
+<th class="py-3 px-space-md font-label-sm text-label-sm">Producto / SKU</th>
+<th class="py-3 px-space-md font-label-sm text-label-sm">Stock vs Mínimo</th>
+<th class="py-3 px-space-md font-label-sm text-label-sm text-center">Cant. Sugerida</th>
+<th class="py-3 px-space-md font-label-sm text-label-sm">Proveedor Sugerido</th>
+<th class="py-3 px-space-md font-label-sm text-label-sm text-right">Costo Est. (COP)</th>
+<th class="py-3 px-space-md font-label-sm text-label-sm max-w-sm">Justificación y Datos de Respaldo</th>
+<th class="py-3 px-space-md font-label-sm text-label-sm text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md text-on-surface">
+<!-- Row 1: Lenovo -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-space-md text-center">
+<input checked="" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" data-id="1" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Portátil Lenovo ThinkPad T14 Gen 4</span>
+<span class="font-numeric-table text-body-sm text-secondary">SKU: LAP-LEN-T14G3</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5 font-numeric-table text-numeric-table">
+<span class="text-error font-title-md">1 unid.</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">Mín: 5</span>
+</div>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm w-fit">
+                  Déficit: 4 unid.
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-title-md text-title-md px-2.5 py-1 bg-surface-container-high rounded-lg text-on-surface">6 Unidades</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1">
+                  Ingram Micro Colombia
+                  <span class="material-symbols-outlined text-[16px] text-tertiary-container" title="Mejor balance condiciones">verified</span>
+</span>
+<span class="font-body-sm text-body-sm text-secondary">45 días crédito comercial</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-table text-title-md text-on-surface">$ 31.200.000</span>
+<span class="font-numeric-table text-body-sm text-secondary">$ 5.200.000 c/u</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md max-w-sm">
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Punto de reorden alcanzado: 12 cotizaciones activas de clientes corporativos; velocidad de venta histórica: 4.2 unid/mes; tiempo de reposición del mayorista: 8 días.
+              </p>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="focusComparator()" type="button">
+<span class="material-symbols-outlined text-[15px]">compare_arrows</span>
+<span>Comparar</span>
+</button>
+<button class="h-8 px-2.5 rounded-lg bg-primary hover:bg-inverse-surface text-on-primary font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="openOrderModal('LAP-LEN-T14G3', 'Portátil Lenovo ThinkPad T14 Gen 4', 'Ingram Micro Colombia', 6, '$ 31.200.000 COP', '45 Días')" type="button">
+<span class="material-symbols-outlined text-[15px]">check</span>
+<span>Confirmar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: HPE Server -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-space-md text-center">
+<input checked="" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" data-id="2" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Servidor HPE ProLiant DL380 Gen10</span>
+<span class="font-numeric-table text-body-sm text-secondary">SKU: PRT-HPE-PROL</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5 font-numeric-table text-numeric-table">
+<span class="text-error font-title-md">1 unid.</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">Mín: 2</span>
+</div>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm w-fit">
+                  Déficit: 1 unid.
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-title-md text-title-md px-2.5 py-1 bg-surface-container-high rounded-lg text-on-surface">2 Unidades</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Nexsys Colombia</span>
+<span class="font-body-sm text-body-sm text-secondary">30 días crédito comercial</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-table text-title-md text-on-surface">$ 48.900.000</span>
+<span class="font-numeric-table text-body-sm text-secondary">$ 24.450.000 c/u</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md max-w-sm">
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Quiebre inminente en servidores de virtualización; 1 unidad restante con reserva de entrega esta semana. Lead time del fabricante: 14 días.
+              </p>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">compare_arrows</span>
+<span>Comparar</span>
+</button>
+<button class="h-8 px-2.5 rounded-lg bg-primary hover:bg-inverse-surface text-on-primary font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="openOrderModal('PRT-HPE-PROL', 'Servidor HPE ProLiant DL380 Gen10', 'Nexsys Colombia', 2, '$ 48.900.000 COP', '30 Días')" type="button">
+<span class="material-symbols-outlined text-[15px]">check</span>
+<span>Confirmar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: APC UPS -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-space-md text-center">
+<input checked="" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" data-id="3" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">UPS APC Smart-UPS On-Line 5kVA</span>
+<span class="font-numeric-table text-body-sm text-secondary">SKU: UPS-APC-SRT5K</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5 font-numeric-table text-numeric-table">
+<span class="text-error font-title-md">0 unid.</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">Mín: 3</span>
+</div>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm w-fit">
+                  Déficit: 3 unid. (Agotado)
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-title-md text-title-md px-2.5 py-1 bg-surface-container-high rounded-lg text-on-surface">4 Unidades</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Anixter Colombia</span>
+<span class="font-body-sm text-body-sm text-secondary">45 días crédito comercial</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-table text-title-md text-on-surface">$ 22.800.000</span>
+<span class="font-numeric-table text-body-sm text-secondary">$ 5.700.000 c/u</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md max-w-sm">
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Protección para despliegue de racks en Q4; 2 órdenes licitadas pendientes de respaldo eléctrico. Tasa de rotación: 1.8 unid/mes.
+              </p>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">compare_arrows</span>
+<span>Comparar</span>
+</button>
+<button class="h-8 px-2.5 rounded-lg bg-primary hover:bg-inverse-surface text-on-primary font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="openOrderModal('UPS-APC-SRT5K', 'UPS APC Smart-UPS On-Line 5kVA', 'Anixter Colombia', 4, '$ 22.800.000 COP', '45 Días')" type="button">
+<span class="material-symbols-outlined text-[15px]">check</span>
+<span>Confirmar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Cisco Switch -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" data-id="4" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Switch Cisco Catalyst 9200L 24P PoE+</span>
+<span class="font-numeric-table text-body-sm text-secondary">SKU: SW-CSCO-C9200</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5 font-numeric-table text-numeric-table">
+<span class="text-on-surface font-title-md">2 unid.</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">Mín: 4</span>
+</div>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm w-fit">
+                  Déficit: 2 unid.
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-title-md text-title-md px-2.5 py-1 bg-surface-container-high rounded-lg text-on-surface">3 Unidades</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Cansel Mayorista</span>
+<span class="font-body-sm text-body-sm text-secondary">30 días crédito comercial</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-table text-title-md text-on-surface">$ 11.250.000</span>
+<span class="font-numeric-table text-body-sm text-secondary">$ 3.750.000 c/u</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md max-w-sm">
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Demanda sostenida por renovación de redes LAN corporativas. Margen de entrega del distribuidor garantizado en 5 días.
+              </p>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">compare_arrows</span>
+<span>Comparar</span>
+</button>
+<button class="h-8 px-2.5 rounded-lg bg-primary hover:bg-inverse-surface text-on-primary font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="openOrderModal('SW-CSCO-C9200', 'Switch Cisco Catalyst 9200L 24P PoE+', 'Cansel Mayorista', 3, '$ 11.250.000 COP', '30 Días')" type="button">
+<span class="material-symbols-outlined text-[15px]">check</span>
+<span>Confirmar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: RAM Server -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" data-id="5" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Memoria RAM Kingston Server Premier 64GB DDR5</span>
+<span class="font-numeric-table text-body-sm text-secondary">SKU: RAM-KNG-DDR5</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5 font-numeric-table text-numeric-table">
+<span class="text-on-surface font-title-md">4 unid.</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">Mín: 8</span>
+</div>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm w-fit">
+                  Déficit: 4 unid.
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-title-md text-title-md px-2.5 py-1 bg-surface-container-high rounded-lg text-on-surface">8 Unidades</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Nexsys Colombia</span>
+<span class="font-body-sm text-body-sm text-secondary">45 días crédito comercial</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-table text-title-md text-on-surface">$ 4.500.000</span>
+<span class="font-numeric-table text-body-sm text-secondary">$ 562.500 c/u</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md max-w-sm">
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Componente para upgrades de centros de datos comprometidos. Tasa de reemplazo acelerada por migración de servidores hiperconvergentes.
+              </p>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">compare_arrows</span>
+<span>Comparar</span>
+</button>
+<button class="h-8 px-2.5 rounded-lg bg-primary hover:bg-inverse-surface text-on-primary font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="openOrderModal('RAM-KNG-DDR5', 'Memoria RAM Kingston Server Premier 64GB DDR5', 'Nexsys Colombia', 8, '$ 4.500.000 COP', '45 Días')" type="button">
+<span class="material-symbols-outlined text-[15px]">check</span>
+<span>Confirmar</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination / Subtotal -->
+<div class="p-space-md bg-surface-container-low/30 flex flex-wrap items-center justify-between gap-space-md text-body-sm font-body-sm text-secondary">
+<div class="flex items-center gap-space-sm">
+<span>Filas por página: <strong>5</strong> de <strong>5 sugerencias</strong></span>
+<span class="text-outline-variant">|</span>
+<span>Lote con respaldo algorítmico basado en MRP de 45 días</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-body-md text-body-md text-on-surface">Total Seleccionado: <strong class="font-numeric-table text-title-md text-on-surface font-title-md" id="batchTotalAmount">$ 102.900.000 COP</strong></span>
+</div>
+</div>
+</div>
+<!-- Real-Time Vendor Matrix Comparator Module -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg mb-space-xl scroll-mt-20" id="comparatorSection">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">balance</span>
+<span>Análisis Comparativo Mayorista en Tiempo Real</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-on-surface mt-0.5">
+          Matriz Comparativa de Proveedor para: <span class="font-title-lg">Portátil Lenovo ThinkPad T14 Gen 4</span> (Lote de 6 Unidades)
+        </h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm">
+          Ahorro máximo potencial: <strong>$ 1.680.000 COP</strong>
+</span>
+</div>
+</div>
+<!-- 3-Column Comparative Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-md">
+<!-- Option A: Recommended (Ingram Micro) -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-md ring-2 ring-primary relative flex flex-col justify-between">
+<div class="absolute -top-3 left-4 px-2.5 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[13px]">award_star</span>
+          Opción Algorítmica Recomendada
+        </div>
+<div class="pt-space-xs flex flex-col gap-space-sm">
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-title-md text-headline-sm text-on-surface">Ingram Micro Colombia</span>
+<span class="font-body-sm text-body-sm text-secondary">Canal Oficial Tier-1</span>
+</div>
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center font-label-sm text-label-sm text-on-surface">A</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-secondary">Costo Unitario & Lote</span>
+<div class="flex items-baseline justify-between">
+<span class="font-numeric-metric text-title-lg text-on-surface">$ 5.200.000 <span class="font-label-sm text-label-sm text-secondary">c/u</span></span>
+<span class="font-numeric-table text-title-md text-on-surface font-title-md">$ 31.200.000 COP</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-1 font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">credit_card</span> Plazo Comercial:</span>
+<strong class="text-on-surface font-title-md text-body-md">45 días crédito</strong>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">local_shipping</span> Tiempo Entrega:</span>
+<span class="font-title-md text-body-md text-on-surface">4 días hábiles</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">verified_user</span> Garantía:</span>
+<span class="text-on-surface">3 años On-site Premier</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full h-9 bg-primary hover:bg-inverse-surface text-on-primary font-title-md text-title-md rounded-lg flex items-center justify-center gap-1.5 shadow-sm transition-colors" onclick="openOrderModal('LAP-LEN-T14G3', 'Portátil Lenovo ThinkPad T14 Gen 4', 'Ingram Micro Colombia', 6, '$ 31.200.000 COP', '45 Días')" type="button">
+<span>Seleccionar Ingram Micro</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Option B: MPS Mayorista -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-title-md text-headline-sm text-on-surface">MPS Mayorista</span>
+<span class="font-body-sm text-body-sm text-secondary">Distribuidor Nacional</span>
+</div>
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center font-label-sm text-label-sm text-on-surface">B</span>
+</div>
+<div class="p-space-sm bg-surface-container-low/70 rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-secondary">Costo Unitario & Lote</span>
+<div class="flex items-baseline justify-between">
+<span class="font-numeric-metric text-title-lg text-on-surface">$ 5.350.000 <span class="font-label-sm text-label-sm text-secondary">c/u</span></span>
+<span class="font-numeric-table text-title-md text-on-surface font-title-md">$ 32.100.000 COP</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-1 font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">credit_card</span> Plazo Comercial:</span>
+<span class="text-on-surface">30 días crédito</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">local_shipping</span> Tiempo Entrega:</span>
+<strong class="text-on-surface font-title-md text-body-md">2 días hábiles (Express)</strong>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">inventory_2</span> Disponibilidad:</span>
+<span class="text-on-surface">Inmediata en bodega Bogotá</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full h-9 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-title-md text-title-md rounded-lg flex items-center justify-center gap-1.5 transition-colors" onclick="openOrderModal('LAP-LEN-T14G3', 'Portátil Lenovo ThinkPad T14 Gen 4', 'MPS Mayorista', 6, '$ 32.100.000 COP', '30 Días')" type="button">
+<span>Cambiar a MPS</span>
+</button>
+</div>
+<!-- Option C: Sedona IT -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-title-md text-headline-sm text-on-surface">Sedona IT</span>
+<span class="font-body-sm text-body-sm text-secondary">Importación Directa</span>
+</div>
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center font-label-sm text-label-sm text-on-surface">C</span>
+</div>
+<div class="p-space-sm bg-surface-container-low/70 rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-secondary">Costo Unitario & Lote</span>
+<div class="flex items-baseline justify-between">
+<span class="font-numeric-metric text-title-lg text-on-surface">$ 5.480.000 <span class="font-label-sm text-label-sm text-secondary">c/u</span></span>
+<span class="font-numeric-table text-title-md text-on-surface font-title-md">$ 32.880.000 COP</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-1 font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">credit_card</span> Plazo Comercial:</span>
+<span class="text-on-surface">Contado / 15 días</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">local_shipping</span> Tiempo Entrega:</span>
+<span class="text-secondary">9 días hábiles (Zona Franca)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">sync_problem</span> Estado de Cupo:</span>
+<span class="text-secondary">Requiere anticipo 20%</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full h-9 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-title-md text-title-md rounded-lg flex items-center justify-center gap-1.5 transition-colors" onclick="openOrderModal('LAP-LEN-T14G3', 'Portátil Lenovo ThinkPad T14 Gen 4', 'Sedona IT', 6, '$ 32.880.000 COP', '15 Días')" type="button">
+<span>Cambiar a Sedona</span>
+</button>
+</div>
+</div>
+<!-- Optimization Justification Banner -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-md">
+<span class="material-symbols-outlined text-[22px] text-tertiary-container mt-0.5">lightbulb</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">Dictamen del Optimizador Financiero:</span>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+<strong>Ingram Micro ofrece el menor costo total (-$900.000 COP frente a MPS) y 15 días adicionales de crédito</strong>, protegiendo el flujo de caja del mes sin comprometer la entrega comprometida con el cliente corporativo.
+        </p>
+</div>
+</div>
+</div>
+<!-- Operational Flow Bottom Guide -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-xl">
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-xs flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-title-md text-title-md text-on-surface">1</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Generación Automatizada</span>
+<span class="font-body-sm text-body-sm text-secondary">Basado en consumo de inventario y pedidos ERP.</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-xs flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-title-md text-title-md text-on-surface">2</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Filtro de Liquidez COP</span>
+<span class="font-body-sm text-body-sm text-secondary">Verificación cruzada con presupuesto de tesorería.</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-xs flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-title-md text-title-md text-on-surface">3</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Transmisión EDI / API</span>
+<span class="font-body-sm text-body-sm text-secondary">Disparo directo a portales B2B mayoristas.</span>
+</div>
+</div>
+</div>
+<!-- Confirmation and PO Emission Modal Backdrop -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-xs hidden transition-opacity" id="orderConfirmationModal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-2xl p-space-lg flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-on-surface">Confirmar Emisión de Orden de Compra</h3>
+<span class="font-numeric-table text-label-md text-secondary" id="modalPoCode">#OC-2024-1082</span>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded-lg" onclick="closeOrderModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- PO Summary Container -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-xs font-body-md text-body-md">
+<div class="flex justify-between items-center py-1">
+<span class="text-secondary">Ítem a Reabastecer:</span>
+<span class="font-title-md text-on-surface text-right" id="modalItemTitle">Portátil Lenovo ThinkPad T14</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-secondary">Proveedor Destino:</span>
+<span class="font-title-md text-on-surface" id="modalVendor">Ingram Micro Colombia</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-secondary">Volumen Autorizado:</span>
+<span class="font-numeric-table font-title-md text-on-surface" id="modalQty">6 Unidades</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-secondary">Condición de Crédito:</span>
+<span class="font-numeric-table text-on-surface" id="modalTerms">45 Días Netos</span>
+</div>
+<div class="h-px bg-surface-container-highest my-1"></div>
+<div class="flex justify-between items-center py-1">
+<span class="font-title-md text-title-md text-on-surface">Monto Total Comprometido:</span>
+<span class="font-numeric-metric text-headline-sm text-on-surface" id="modalAmount">$ 31.200.000 COP</span>
+</div>
+</div>
+<!-- Financial Clearance Badge -->
+<div class="flex items-center gap-space-xs px-space-sm py-2 bg-surface-container-low rounded-lg text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">verified</span>
+<span>Cupo disponible verificado en tesorería. Esta orden consumirá cupo comercial sin anticipo en efectivo.</span>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container-high text-on-surface font-title-md text-title-md rounded-lg transition-colors" onclick="closeOrderModal()" type="button">
+          Modificar Cantidades
+        </button>
+<button class="h-9 px-space-md bg-primary hover:bg-inverse-surface text-on-primary font-title-md text-title-md rounded-lg shadow-sm flex items-center gap-1.5 transition-colors" onclick="executePOApproval()" type="button">
+<span class="material-symbols-outlined text-[18px]">draw</span>
+<span>Confirmar y Enviar al Mayorista</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    // Micro-interactions and Modal Control Logic
+    function openOrderModal(sku, title, vendor, qty, amount, terms) {
+      document.getElementById('modalPoCode').innerText = '#OC-2024-' + Math.floor(1000 + Math.random() * 9000);
+      document.getElementById('modalItemTitle').innerText = title;
+      document.getElementById('modalVendor').innerText = vendor;
+      document.getElementById('modalQty').innerText = qty + ' Unidades';
+      document.getElementById('modalTerms').innerText = terms;
+      document.getElementById('modalAmount').innerText = amount;
+      
+      const modal = document.getElementById('orderConfirmationModal');
+      modal.classList.remove('hidden');
+    }
+
+    function closeOrderModal() {
+      const modal = document.getElementById('orderConfirmationModal');
+      modal.classList.add('hidden');
+    }
+
+    function executePOApproval() {
+      closeOrderModal();
+      const toast = document.getElementById('toastNotification');
+      if (toast) {
+        toast.innerHTML = `
+          <span class="material-symbols-outlined text-[20px] text-on-surface mt-0.5">check_circle</span>
+          <div class="flex flex-col min-w-0 flex-1">
+            <span class="font-title-md text-title-md text-on-surface">Orden de Compra Emitida</span>
+            <span class="font-body-sm text-body-sm text-secondary">Documento transmitido exitosamente al portal del mayorista.</span>
+          </div>
+          <button onclick="this.parentElement.remove()" class="text-secondary hover:text-on-surface p-1 rounded">
+            <span class="material-symbols-outlined text-[16px]">close</span>
+          </button>
+        `;
+      }
+    }
+
+    function focusComparator() {
+      const element = document.getElementById('comparatorSection');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Dynamic Select All Checkbox Management
+    const selectAll = document.getElementById('selectAllCheckbox');
+    const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+    const counterDisplay = document.getElementById('selectedCounter');
+
+    function updateCounter() {
+      const checkedCount = document.querySelectorAll('.row-checkbox:checked').length;
+      if (counterDisplay) {
+        counterDisplay.innerText = checkedCount;
+      }
+      const emitBtn = document.getElementById('btnEmitBatch');
+      if (emitBtn) {
+        if (checkedCount === 0) {
+          emitBtn.classList.add('opacity-50', 'pointer-events-none');
+        } else {
+          emitBtn.classList.remove('opacity-50', 'pointer-events-none');
+        }
+      }
+    }
+
+    if (selectAll) {
+      selectAll.addEventListener('change', function() {
+        rowCheckboxes.forEach(cb => cb.checked = selectAll.checked);
+        updateCounter();
+      });
+    }
+
+    rowCheckboxes.forEach(cb => {
+      cb.addEventListener('change', function() {
+        updateCounter();
+      });
+    });
+
+    const btnEmitBatch = document.getElementById('btnEmitBatch');
+    if (btnEmitBatch) {
+      btnEmitBatch.addEventListener('click', function() {
+        openOrderModal('LOTE-CONSOLIDADO', 'Lote de 3 Órdenes Seleccionadas', 'Ingram Micro + Nexsys + Anixter', 12, '$ 102.900.000 COP', 'Promedio 38 Días');
+      });
+    }
+  </script>
+</div></main></div></body></html>

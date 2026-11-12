@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-lowest":"#ffffff","outline-variant":"#c6c6cd","on-tertiary-fixed":"#001a42","secondary-fixed-dim":"#bcc7de","surface-tint":"#565e74","surface-container":"#e5eeff","primary-container":"#131b2e","surface-container-highest":"#d3e4fe","on-background":"#0b1c30","error":"#ba1a1a","surface-container-high":"#dce9ff","on-primary-container":"#7c839b","inverse-primary":"#bec6e0","background":"#f8f9ff","tertiary-container":"#001a42","on-tertiary":"#ffffff","on-primary-fixed-variant":"#3f465c","on-secondary-fixed":"#111c2d","on-secondary-fixed-variant":"#3c475a","surface-variant":"#d3e4fe","secondary-fixed":"#d8e3fb","surface-container-low":"#eff4ff","on-surface":"#0b1c30","error-container":"#ffdad6","inverse-surface":"#213145","surface-bright":"#f8f9ff","on-primary":"#ffffff","tertiary-fixed":"#d8e2ff","surface":"#f8f9ff","primary":"#000000","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#adc6ff","on-secondary-container":"#586377","on-tertiary-fixed-variant":"#004395","primary-fixed":"#dae2fd","secondary-container":"#d5e0f8","secondary":"#545f73","tertiary":"#000000","surface-dim":"#cbdbf5","on-error":"#ffffff","on-surface-variant":"#45464d","outline":"#76777d","primary-fixed-dim":"#bec6e0","on-secondary":"#ffffff","on-primary-fixed":"#131b2e","on-error-container":"#93000a","on-tertiary-container":"#3980f4"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"2rem",gutter:"1rem",margin:"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"0.75rem","space-lg":"1.25rem"},fontFamily:{"title-md":["Inter"],"numeric-table":["Roboto Mono"],"title-lg":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"numeric-metric":["Roboto Mono"],"headline-lg":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"]},fontSize:{"title-md":["14px",{lineHeight:"20px",fontWeight:"600"}],"numeric-table":["13px",{lineHeight:"18px",fontWeight:"500"}],"title-lg":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"numeric-metric":["28px",{lineHeight:"34px",fontWeight:"700"}],"headline-lg":["30px",{lineHeight:"38px",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-margin pt-margin pb-space-lg flex items-center gap-space-sm"><img alt="Logo Inventario y Flujo de Caja" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrC6MaBw2JcTB8Wmdq6KSZGDrJquiumMmpJ6G0cTOeFvHVUu33e1LErEmFv-CoYQxNJTbWXOIBb1SMbTABuV11uZKRQsnuLHynxhfZPkAutEmn-ZwJnPmXE7DHyDpK_ZCriRvXIHV8ppOBMRI4rPkb9kqmtyG5SIb6cfucf8GmH4494ccdnWpi7V-9WeiIJVJgP0YQO7lT7xGuE9g4t5WuT3mW7u4Waxyz26TAP8zl-v"/><div class="flex flex-col"><span class="font-title-md text-title-md text-surface tracking-tight leading-tight">Inventario y Flujo de Caja</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Hardware & Enterprise IT</span></div></div><div class="px-margin pb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Operaciones & Control</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-surface-container-highest text-on-surface font-title-md rounded-xl"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="dashboard-cierre" href="#"><span class="material-symbols-outlined text-[20px]">pie_chart</span><span class="font-body-md text-body-md">Dashboard Cierre</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="catalogo-de-inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Catálogo de Inventario</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="alertas-y-rotacion" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span class="font-body-md text-body-md">Alertas y Rotación</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-colors bg-surface-container-highest text-on-surface font-title-md rounded-xl" data-path="directorio-de-proveedores" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="font-body-md text-body-md">Directorio de Proveedores</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-inverse-surface hover:text-surface transition-colors" data-path="ordenes-sugeridas" href="#"><span class="material-symbols-outlined text-[20px]">shopping_cart_checkout</span><span class="font-body-md text-body-md">Órdenes Sugeridas</span></a></nav></div><div class="p-margin m-space-md bg-inverse-surface rounded-xl flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Período Activo</span><span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container mr-1.5"></span>Cierre en Progreso</span></div><p class="font-title-md text-title-md text-surface">Octubre 2024</p><div class="flex items-center justify-between pt-space-xs text-on-primary-container"><span class="font-body-sm text-body-sm">Mesa de Control IT</span><span class="font-numeric-table text-numeric-table">Ext. 4081</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="font-label-md text-label-md text-on-surface-variant">Gestión Financiera & Stock</span><span class="text-outline-variant">/</span><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-lg text-on-surface"><span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span><span class="font-title-md text-title-md">Octubre 2024</span><span class="material-symbols-outlined text-[16px] text-secondary">expand_more</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-lg"><span class="font-label-sm text-label-sm text-on-surface-variant">Divisa Base:</span><span class="font-title-md text-title-md text-on-surface">COP ($)</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-numeric-table">TRM ~$4.180</span></div><button class="relative p-space-xs rounded-xl hover:bg-surface-container-low text-secondary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 flex items-center justify-center w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px]">4</span></button><div class="flex items-center gap-space-md pl-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLwWDEGVgcHS8CIwFM2-9U_qSKoVHOacE9IXHSQEmHmgVtYiDDwwXgE0C3M3X__JiQg8yl1B8XljJj0_dWiFi9otHHZjON8AqBoLKpJjshe_KIHGZvSgUDts2f3rWAO8GBLnBsBKVLesyYt6B5cQHAl65VP5Uw95MvOj2-cmcI_SqoPnJEJdUeZpweqO6qmRssJ6h-wRnhGub0Fmclqm17ygym70DUy9Q5VaOBWlY"/><div class="flex flex-col text-left"><span class="font-title-md text-title-md text-on-surface leading-snug">Carlos Mendoza</span><span class="font-body-sm text-body-sm text-secondary leading-none">Gerente de Operaciones y Finanzas</span></div></div></div></div></header><main class="w-full pt-16 bg-background px-margin"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Encabezado de Sección y Acciones Principales -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pt-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center p-1.5 rounded-lg bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Módulo de Aprovisionamiento IT</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Directorio y Desempeño de Proveedores IT</h1>
+<p class="font-body-md text-body-md text-secondary max-w-4xl">
+        Control de aliados mayoristas, condiciones comerciales, evaluación de cumplimiento de entregas y saldo de crédito disponible en Pesos Colombianos (COP).
+      </p>
+</div>
+<!-- Botones de Acción -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-title-md text-title-md shadow-sm hover:bg-surface-container-low transition-colors" onclick="exportarProveedores()" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+        Exportar Contactos
+      </button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-title-md text-title-md shadow-sm hover:bg-inverse-surface transition-colors" onclick="abrirModalProveedor('registrar')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+        + Registrar Nuevo Proveedor
+      </button>
+</div>
+</div>
+<!-- KPI Metricas de Proveedores (4 Tarjetas Arquitectónicas) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Tarjeta 1: Proveedores Activos -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Red de Distribución</span>
+<span class="font-title-md text-title-md text-on-surface">Proveedores Activos</span>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</span>
+</div>
+<div class="pt-space-md flex flex-col gap-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-numeric-metric text-numeric-metric text-on-surface tracking-tight">18</span>
+<span class="font-body-sm text-body-sm text-secondary">entidades</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1.5 pt-1">
+<span class="w-2 h-2 rounded-full bg-emerald-600 inline-block"></span>
+          Mayoristas y Fabricantes Autorizados
+        </p>
+</div>
+</div>
+<!-- Tarjeta 2: Lead Time Promedio -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Despacho & Logística</span>
+<span class="font-title-md text-title-md text-on-surface">Lead Time Promedio</span>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</span>
+</div>
+<div class="pt-space-md flex flex-col gap-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-numeric-metric text-numeric-metric text-on-surface tracking-tight">7.4</span>
+<span class="font-body-sm text-body-sm text-secondary">Días Hábiles</span>
+</div>
+<div class="flex items-center gap-1 pt-1 font-body-sm text-body-sm text-emerald-700">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+<span>-1.2 días vs media trimestral</span>
+</div>
+</div>
+</div>
+<!-- Tarjeta 3: Línea de Crédito Global -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Flujo & Capital de Trabajo</span>
+<span class="font-title-md text-title-md text-on-surface">Crédito Global Utilizado</span>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</span>
+</div>
+<div class="pt-space-md flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<span class="font-numeric-metric text-[22px] leading-7 text-on-surface font-bold tracking-tight">$ 385.0M</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-numeric-table">48% Ocupado</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden">
+<div class="bg-primary h-2 rounded-full" style="width: 48.1%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex justify-between">
+<span>Cupo Total: $ 800.000.000 COP</span>
+<span class="font-numeric-table font-medium text-on-surface">$ 415.0M disp.</span>
+</p>
+</div>
+</div>
+<!-- Tarjeta 4: OTIF (Cumplimiento de Entrega) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Calidad Operacional</span>
+<span class="font-title-md text-title-md text-on-surface">Cumplimiento (OTIF)</span>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</span>
+</div>
+<div class="pt-space-md flex flex-col gap-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-numeric-metric text-numeric-metric text-on-surface tracking-tight">94.2%</span>
+<span class="font-label-md text-label-md text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Satisfactorio</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary pt-1">
+          On-Time In-Full sobre 142 órdenes cerradas
+        </p>
+</div>
+</div>
+</section>
+<!-- Buscador y Filtros Facetados -->
+<section class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-space-md">
+<!-- Input de Búsqueda -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span>
+<input class="w-full h-10 pl-10 pr-4 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest transition-colors" id="filtroBusqueda" oninput="filtrarProveedores()" placeholder="Buscar por Razón Social, NIT, Marca Representada (Dell, Lenovo, Cisco) o Contacto..." type="text"/>
+</div>
+<!-- Contenedor de Selects -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Filtro: Tipo de Tecnología -->
+<div class="flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-secondary">memory</span>
+<select class="bg-transparent text-on-surface font-title-md text-body-sm focus:outline-none cursor-pointer pr-2" id="filtroTecnologia" onchange="filtrarProveedores()">
+<option value="todos">Toda Tecnología</option>
+<option value="servidores">Mayorista Servidores & Data Center</option>
+<option value="componentes">Componentes & Partes</option>
+<option value="portatiles">Mayorista Portátiles & PC</option>
+<option value="energia">Energía, Racks & UPS</option>
+<option value="software">Software & Licenciamiento Cloud</option>
+</select>
+</div>
+<!-- Filtro: Plazo de Crédito -->
+<div class="flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-secondary">payments</span>
+<select class="bg-transparent text-on-surface font-title-md text-body-sm focus:outline-none cursor-pointer pr-2" id="filtroPlazo" onchange="filtrarProveedores()">
+<option value="todos">Todos los Plazos</option>
+<option value="contado">Contado Inmediato</option>
+<option value="15">Crédito 15 Días</option>
+<option value="30">Crédito 30 Días</option>
+<option value="45">Crédito 45 Días</option>
+<option value="60">Crédito 60 Días</option>
+</select>
+</div>
+<!-- Filtro: Calificación OTIF -->
+<div class="flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-amber-500">star</span>
+<select class="bg-transparent text-on-surface font-title-md text-body-sm focus:outline-none cursor-pointer pr-2" id="filtroCalificacion" onchange="filtrarProveedores()">
+<option value="todos">Toda Calificación</option>
+<option value="5">Excelente (95% - 100%)</option>
+<option value="4">Bueno (90% - 94%)</option>
+<option value="3">Regular (< 90%)</option>
+</select>
+</div>
+<!-- Botón Limpiar Filtros -->
+<button class="px-space-sm py-2 text-secondary hover:text-on-surface font-title-md text-body-sm rounded-lg hover:bg-surface-container-low transition-colors" onclick="limpiarFiltros()" type="button">
+          Limpiar
+        </button>
+</div>
+</div>
+<!-- Chips Activos -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider pr-1">Filtros Activos:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">
+        Zona: Colombia (Bogotá / Medellín / Cali)
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">
+        Moneda Facturación: COP
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">
+        Régimen: Grandes Contribuyentes IT
+      </span>
+<span class="ml-auto font-body-sm text-body-sm text-secondary" id="conteoProveedores">Mostrando 5 de 18 mayoristas autorizados</span>
+</div>
+</section>
+<!-- Directorio en Tarjetas Ejecutivas Detalladas -->
+<section class="flex flex-col gap-space-md" id="directorioCards">
+<!-- Proveedor 1: Ingram Micro Colombia -->
+<article class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col lg:flex-row gap-space-lg items-start" data-proveedor="ingram">
+<!-- Columna Izquierda: Identidad y Categorías -->
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+<h2 class="font-title-lg text-title-lg text-on-surface tracking-tight font-bold">Ingram Micro Colombia S.A.S.</h2>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-secondary">NIT:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">830.012.345-1</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-low text-secondary">Aliado Nivel Tier 1</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Líneas de Distribución Oficial:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Servidores Rack / Blade</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Almacenamiento SAN</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Portátiles Empresariales</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1 pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+            Marcas: Dell Technologies, HPE, Cisco Meraki, Lenovo DCG.
+          </p>
+</div>
+<!-- Contacto Principal -->
+<div class="mt-2 p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Laura Restrepo</span>
+<span class="font-label-sm text-label-sm text-secondary">Gerente de Cuenta Mayorista</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-secondary font-body-sm text-body-sm pt-0.5">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">call</span>
+              +57 (601) 745-0000 Ext. 210
+            </span>
+<span class="inline-flex items-center gap-1 font-numeric-table">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+              l.restrepo@ingrammicro.com
+            </span>
+</div>
+</div>
+</div>
+<!-- Columna Central: Parámetros Financieros & Línea de Crédito -->
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm bg-surface-container-low/60 p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Condición Comercial</span>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container-highest text-on-surface">
+            Crédito a 45 días
+          </span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Cupo Total Otorgado:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">$ 300.000.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Saldo Disponible:</span>
+<span class="font-numeric-table text-numeric-table font-bold text-emerald-700">$ 164.500.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline text-secondary">
+<span class="font-body-sm text-body-sm">Comprometido / Tránsito:</span>
+<span class="font-numeric-table text-numeric-table">$ 135.500.000 COP (45.1%)</span>
+</div>
+<!-- Barra de utilización de crédito -->
+<div class="w-full bg-surface-container-high rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 45.1%;"></div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-body-sm text-body-sm text-secondary">
+<span>Próxima Factura por Vencer:</span>
+<span class="font-numeric-table text-on-surface font-medium">18 Nov 2024 ($ 42.1M)</span>
+</div>
+</div>
+<!-- Columna Derecha: Métricas OTIF y Botones Operativos -->
+<div class="flex flex-col w-full lg:w-4/12 gap-space-md justify-between h-full">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">OTIF Entregas</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-emerald-700">98%</span>
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">A tiempo y completo</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Lead Time Real</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-on-surface">5</span>
+<span class="font-body-sm text-body-sm text-secondary">días prom.</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Bodega Funza (Cund.)</span>
+</div>
+</div>
+<!-- Acciones por Proveedor -->
+<div class="flex flex-wrap items-center gap-space-xs pt-2">
+<button class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md hover:bg-surface-container-highest transition-colors" onclick="consultarCatalogo('Ingram Micro Colombia')" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+            Consultar Catálogo
+          </button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="abrirModalProveedor('editar', 'Ingram Micro Colombia S.A.S.')" title="Editar Proveedor" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="verHistorialOrdenes('Ingram Micro Colombia')" title="Ver Historial de Órdenes" type="button">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Proveedor 2: Nexsys de Colombia -->
+<article class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col lg:flex-row gap-space-lg items-start" data-proveedor="nexsys">
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+<h2 class="font-title-lg text-title-lg text-on-surface tracking-tight font-bold">Nexsys de Colombia</h2>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-secondary">NIT:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">860.518.239-4</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-low text-secondary">Distribuidor de Valor Agregado</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Líneas de Distribución Oficial:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Software Empresarial</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Licencias Cloud & CSP</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Servidores Lenovo & IBM</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1 pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+            Marcas: Microsoft CSP, Red Hat, Oracle, Lenovo ISG, VMware.
+          </p>
+</div>
+<div class="mt-2 p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Andrés Camargo</span>
+<span class="font-label-sm text-label-sm text-secondary">Especialista de Producto IT</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-secondary font-body-sm text-body-sm pt-0.5">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">call</span>
+              +57 (601) 600-4400
+            </span>
+<span class="inline-flex items-center gap-1 font-numeric-table">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+              andres.camargo@nexsysla.com
+            </span>
+</div>
+</div>
+</div>
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm bg-surface-container-low/60 p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Condición Comercial</span>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container-highest text-on-surface">
+            Crédito a 30 días
+          </span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Cupo Total Otorgado:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">$ 200.000.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Saldo Disponible:</span>
+<span class="font-numeric-table text-numeric-table font-bold text-emerald-700">$ 88.000.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline text-secondary">
+<span class="font-body-sm text-body-sm">Comprometido / Tránsito:</span>
+<span class="font-numeric-table text-numeric-table">$ 112.000.000 COP (56.0%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 56.0%;"></div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-body-sm text-body-sm text-secondary">
+<span>Aprovisionamiento Electrónico:</span>
+<span class="font-body-sm text-emerald-700 font-medium">Habilitado 24/7 API</span>
+</div>
+</div>
+<div class="flex flex-col w-full lg:w-4/12 gap-space-md justify-between h-full">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">OTIF Entregas</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-emerald-700">95%</span>
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Nivel Confiable</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Lead Time Mixto</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-on-surface">3-8</span>
+<span class="font-body-sm text-body-sm text-secondary">días</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">3d Licencias / 8d HW</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-2">
+<button class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md hover:bg-surface-container-highest transition-colors" onclick="consultarCatalogo('Nexsys de Colombia')" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+            Consultar Catálogo
+          </button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="abrirModalProveedor('editar', 'Nexsys de Colombia')" title="Editar Proveedor" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="verHistorialOrdenes('Nexsys de Colombia')" title="Ver Historial de Órdenes" type="button">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Proveedor 3: MPS Mayorista de Colombia -->
+<article class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col lg:flex-row gap-space-lg items-start" data-proveedor="mps">
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+<h2 class="font-title-lg text-title-lg text-on-surface tracking-tight font-bold">MPS Mayorista de Colombia</h2>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-secondary">NIT:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">800.198.765-2</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-low text-secondary">Mayorista Hardware Masivo</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Líneas de Distribución Oficial:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Portátiles Corporativos</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Computadores All-in-One</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Accesorios & Periféricos</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1 pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+            Marcas: Lenovo ThinkPad, Asus ExpertBook, Logitech B2B, Kingston Enterprise.
+          </p>
+</div>
+<div class="mt-2 p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Carolina Morales</span>
+<span class="font-label-sm text-label-sm text-secondary">Ejecutiva Comercial B2B</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-secondary font-body-sm text-body-sm pt-0.5">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">call</span>
+              +57 (601) 432-1200 Ext. 104
+            </span>
+<span class="inline-flex items-center gap-1 font-numeric-table">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+              cmorales@mps.com.co
+            </span>
+</div>
+</div>
+</div>
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm bg-surface-container-low/60 p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Condición Comercial</span>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container-highest text-on-surface">
+            Crédito a 30 días
+          </span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Cupo Total Otorgado:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">$ 180.000.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Saldo Disponible:</span>
+<span class="font-numeric-table text-numeric-table font-bold text-emerald-700">$ 72.300.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline text-secondary">
+<span class="font-body-sm text-body-sm">Comprometido / Tránsito:</span>
+<span class="font-numeric-table text-numeric-table">$ 107.700.000 COP (59.8%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 59.8%;"></div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-body-sm text-body-sm text-secondary">
+<span>Descuento por Pronto Pago (10d):</span>
+<span class="font-numeric-table text-on-surface font-medium">1.5% Financiero</span>
+</div>
+</div>
+<div class="flex flex-col w-full lg:w-4/12 gap-space-md justify-between h-full">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">OTIF Entregas</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-on-surface">92%</span>
+<span class="material-symbols-outlined text-[16px] text-amber-600">report_problem</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Dentro de SLA acordado</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Lead Time Real</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-on-surface">6</span>
+<span class="font-body-sm text-body-sm text-secondary">días prom.</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Centro Distribución Siberia</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-2">
+<button class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md hover:bg-surface-container-highest transition-colors" onclick="consultarCatalogo('MPS Mayorista de Colombia')" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+            Consultar Catálogo
+          </button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="abrirModalProveedor('editar', 'MPS Mayorista de Colombia')" title="Editar Proveedor" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="verHistorialOrdenes('MPS Mayorista de Colombia')" title="Ver Historial de Órdenes" type="button">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Proveedor 4: Sedona IT / Anixter Colombia -->
+<article class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col lg:flex-row gap-space-lg items-start" data-proveedor="sedona">
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+<h2 class="font-title-lg text-title-lg text-on-surface tracking-tight font-bold">Sedona IT / Anixter Colombia</h2>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-secondary">NIT:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">830.054.981-8</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-low text-secondary">Especialista Infraestructura Crítica</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Líneas de Distribución Oficial:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">UPS Industriales & Modulares</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Racks de Servidores 42U</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Cableado Cat 6A / Fibra</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1 pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+            Marcas: APC by Schneider Electric, Vertiv, Tripp Lite, Panduit.
+          </p>
+</div>
+<div class="mt-2 p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Felipe Vargas</span>
+<span class="font-label-sm text-label-sm text-secondary">Ingeniero de Soluciones & Energía</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-secondary font-body-sm text-body-sm pt-0.5">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">call</span>
+              +57 (601) 518-8000
+            </span>
+<span class="inline-flex items-center gap-1 font-numeric-table">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+              felipe.vargas@sedonait.co
+            </span>
+</div>
+</div>
+</div>
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm bg-surface-container-low/60 p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Condición Comercial</span>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container-highest text-on-surface">
+            Crédito a 60 días
+          </span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Cupo Total Otorgado:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">$ 120.000.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Saldo Disponible:</span>
+<span class="font-numeric-table text-numeric-table font-bold text-emerald-700">$ 45.200.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline text-secondary">
+<span class="font-body-sm text-body-sm">Comprometido / Tránsito:</span>
+<span class="font-numeric-table text-numeric-table">$ 74.800.000 COP (62.3%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 62.3%;"></div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-body-sm text-body-sm text-secondary">
+<span>Garantía & Puesta en Marcha:</span>
+<span class="font-body-sm text-on-surface font-medium">Incluida en Sitio</span>
+</div>
+</div>
+<div class="flex flex-col w-full lg:w-4/12 gap-space-md justify-between h-full">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">OTIF Entregas</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-amber-700">89%</span>
+<span class="material-symbols-outlined text-[16px] text-amber-600">warning</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Atención en fletes pesados</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Lead Time Real</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-on-surface">12</span>
+<span class="font-body-sm text-body-sm text-secondary">días</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Fabricación & flete especial</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-2">
+<button class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md hover:bg-surface-container-highest transition-colors" onclick="consultarCatalogo('Sedona IT / Anixter Colombia')" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+            Consultar Catálogo
+          </button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="abrirModalProveedor('editar', 'Sedona IT / Anixter Colombia')" title="Editar Proveedor" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="verHistorialOrdenes('Sedona IT / Anixter Colombia')" title="Ver Historial de Órdenes" type="button">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Proveedor 5: Makro Computo Colombia -->
+<article class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col lg:flex-row gap-space-lg items-start" data-proveedor="makro">
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+<h2 class="font-title-lg text-title-lg text-on-surface tracking-tight font-bold">Makro Cómputo Colombia S.A.</h2>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-secondary">NIT:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">860.076.432-9</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-low text-secondary">Partes & Dispositivos de Red</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Líneas de Distribución Oficial:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Memorias RAM & SSD Server</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Switches & Routers B2B</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Monitores Profesionales</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1 pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+            Marcas: Western Digital Enterprise, Seagate, TP-Link Omada, Dell Displays.
+          </p>
+</div>
+<div class="mt-2 p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Jorge Eduardo Téllez</span>
+<span class="font-label-sm text-label-sm text-secondary">Director Comercial Corporativo</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-secondary font-body-sm text-body-sm pt-0.5">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">call</span>
+              +57 (601) 321-9988
+            </span>
+<span class="inline-flex items-center gap-1 font-numeric-table">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+              jtellez@makrocomputo.com
+            </span>
+</div>
+</div>
+</div>
+<div class="flex flex-col w-full lg:w-4/12 gap-space-sm bg-surface-container-low/60 p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Condición Comercial</span>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container-highest text-on-surface">
+            Crédito a 30 días
+          </span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Cupo Total Otorgado:</span>
+<span class="font-numeric-table text-numeric-table font-semibold text-on-surface">$ 100.000.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-secondary">Saldo Disponible:</span>
+<span class="font-numeric-table text-numeric-table font-bold text-emerald-700">$ 47.000.000 COP</span>
+</div>
+<div class="flex justify-between items-baseline text-secondary">
+<span class="font-body-sm text-body-sm">Comprometido / Tránsito:</span>
+<span class="font-numeric-table text-numeric-table">$ 53.000.000 COP (53.0%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 53.0%;"></div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-body-sm text-body-sm text-secondary">
+<span>Despacho Rápido en Bogotá:</span>
+<span class="font-body-sm text-on-surface font-medium">Mismo Día Hábil (< 12:00)</span>
+</div>
+</div>
+<div class="flex flex-col w-full lg:w-4/12 gap-space-md justify-between h-full">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">OTIF Entregas</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-emerald-700">96%</span>
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Excelente respuesta</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Lead Time Real</span>
+<div class="flex items-baseline gap-1 pt-0.5">
+<span class="font-numeric-metric text-[22px] leading-tight font-bold text-on-surface">4</span>
+<span class="font-body-sm text-body-sm text-secondary">días prom.</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Cobertura Nacional Deprisa</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-2">
+<button class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md hover:bg-surface-container-highest transition-colors" onclick="consultarCatalogo('Makro Cómputo Colombia')" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+            Consultar Catálogo
+          </button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="abrirModalProveedor('editar', 'Makro Cómputo Colombia S.A.')" title="Editar Proveedor" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="verHistorialOrdenes('Makro Cómputo Colombia')" title="Ver Historial de Órdenes" type="button">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Paginación de Directorio -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-secondary">Filas por página:</span>
+<select class="bg-surface-container-low text-on-surface font-title-md text-body-sm rounded px-2 py-1 focus:outline-none">
+<option>5 proveedores</option>
+<option>10 proveedores</option>
+<option>25 proveedores</option>
+</select>
+<span class="font-body-sm text-body-sm text-secondary pl-space-sm">Mostrando 1 a 5 de 18 aliados comerciales</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container-low text-secondary opacity-50 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-title-md text-title-md">1</button>
+<button class="w-8 h-8 rounded-lg text-secondary hover:bg-surface-container-low font-title-md text-title-md">2</button>
+<button class="w-8 h-8 rounded-lg text-secondary hover:bg-surface-container-low font-title-md text-title-md">3</button>
+<button class="w-8 h-8 rounded-lg text-secondary hover:bg-surface-container-low font-title-md text-title-md">4</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Modal: Editar / Registrar Proveedor -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary-container/60 backdrop-blur-sm hidden" id="modalProveedor" role="dialog">
+<div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl flex flex-col max-h-[921px] overflow-hidden">
+<!-- Cabecera del Modal -->
+<div class="px-space-lg py-space-md flex items-center justify-between bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">domain</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalTitulo">Registrar Nuevo Proveedor IT</h3>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Gestión de datos fiscales, condiciones de crédito y logística</span>
+</div>
+<button class="p-1.5 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="cerrarModalProveedor()" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Pestañas de Navegación del Formulario -->
+<div class="flex items-center px-space-lg gap-space-md bg-surface-container-low text-secondary font-title-md text-body-md">
+<button class="py-2.5 text-on-surface font-semibold border-b-2 border-primary" id="tab-datos-generales" onclick="cambiarPestanaModal('datos-generales')" type="button">
+          1. Datos Generales
+        </button>
+<button class="py-2.5 hover:text-on-surface" id="tab-condiciones-comerciales" onclick="cambiarPestanaModal('condiciones-comerciales')" type="button">
+          2. Condiciones Comerciales
+        </button>
+<button class="py-2.5 hover:text-on-surface" id="tab-linea-credito" onclick="cambiarPestanaModal('linea-credito')" type="button">
+          3. Línea de Crédito & Bancos
+        </button>
+</div>
+<!-- Contenido de las Pestañas (Scrollable) -->
+<form class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md" id="formProveedor" onsubmit="guardarProveedor(event)">
+<!-- Pestaña 1: Datos Generales -->
+<div class="flex flex-col gap-space-md" id="panel-datos-generales">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Razón Social *</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none" name="razonSocial" placeholder="Ej. TD SYNNEX Colombia S.A.S." required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">NIT / RUT *</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md font-numeric-table focus:bg-surface-container-lowest focus:outline-none" name="nit" placeholder="Ej. 900.824.112-5" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Ciudad Sede Principal *</label>
+<select class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none" name="ciudad">
+<option value="bogota">Bogotá D.C. (Cundinamarca)</option>
+<option value="medellin">Medellín (Antioquia)</option>
+<option value="cali">Cali (Valle del Cauca)</option>
+<option value="barranquilla">Barranquilla (Atlántico)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Dirección Bodega / Oficinas *</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none" name="direccion" placeholder="Ej. Calle 26 # 69-76 Edificio Elemento" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Correo Electrónico de Facturación *</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md font-numeric-table focus:bg-surface-container-lowest focus:outline-none" name="emailFacturacion" placeholder="facturacion.co@proveedor.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Teléfono PBX / Despachos *</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md font-numeric-table focus:bg-surface-container-lowest focus:outline-none" name="telefono" placeholder="+57 (601) 000-0000" required="" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Nombre y Cargo de Contacto Comercial *</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none" name="contactoNombre" placeholder="Ej. Marcela Gómez - Account Manager Enterprise" required="" type="text"/>
+</div>
+</div>
+<!-- Pestaña 2: Condiciones Comerciales -->
+<div class="flex flex-col gap-space-md hidden" id="panel-condiciones-comerciales">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Categoría Principal de Suministro *</label>
+<select class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none" name="categoria">
+<option value="servidores">Mayorista Servidores & Data Center</option>
+<option value="componentes">Componentes, Procesadores & RAM</option>
+<option value="portatiles">Mayorista Portátiles & Desktops</option>
+<option value="energia">Energía, Racks & UPS Críticas</option>
+<option value="software">Software, Seguridad & Nube</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Plazo Comercial Acordado *</label>
+<select class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none" name="plazoPago">
+<option value="contado">Contado Contraentrega</option>
+<option value="15">Crédito a 15 días calendario</option>
+<option selected="" value="30">Crédito a 30 días calendario</option>
+<option value="45">Crédito a 45 días calendario</option>
+<option value="60">Crédito a 60 días calendario</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Lead Time Comprometido (Días Hábiles) *</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md font-numeric-table focus:bg-surface-container-lowest focus:outline-none" max="60" min="1" name="leadTime" type="number" value="5"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Descuento Financiero Pronto Pago (%)</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none" name="descuentoProntoPago" placeholder="Ej. 2% dentro de 10 días" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Marcas Representadas / Fabricantes Autorizados</label>
+<textarea class="p-2.5 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none" name="marcas" placeholder="Ej. Dell EMC, Cisco Networking, Fortinet, HP Enterprise..." rows="2"></textarea>
+</div>
+</div>
+<!-- Pestaña 3: Línea de Crédito & Bancos -->
+<div class="flex flex-col gap-space-md hidden" id="panel-linea-credito">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Límite de Cupo de Crédito (COP $) *</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md font-numeric-table focus:bg-surface-container-lowest focus:outline-none" name="limiteCredito" placeholder="Ej. 250000000" required="" type="number"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Tasa o Recargo por Mora (%)</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none" name="tasaMora" placeholder="Máxima legal vigente SuperFinanciera" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Banco Receptor de Transferencias</label>
+<select class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none" name="banco">
+<option value="bancolombia">Bancolombia (Cuenta Corriente)</option>
+<option value="davivienda">Davivienda (Cuenta Corriente)</option>
+<option value="bogota">Banco de Bogotá</option>
+<option value="bbva">BBVA Colombia</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Número de Cuenta Bancaria</label>
+<input class="h-9 px-3 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md font-numeric-table focus:bg-surface-container-lowest focus:outline-none" name="numeroCuenta" placeholder="000-000000-00" type="text"/>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-secondary">
+              El límite de crédito registrado se reflejará inmediatamente en los cálculos de liquidez del módulo <em>Cierre de Flujo de Caja</em> y habilitará la emisión de sugeridos automáticos de reposición de inventario.
+            </p>
+</div>
+</div>
+<!-- Indicador de Campos Obligatorios -->
+<div class="p-2.5 rounded-lg bg-amber-50 text-amber-900 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-amber-700">warning</span>
+<span class="font-body-sm text-body-sm">
+            Todos los campos con (*) son requeridos para la emisión de órdenes de compra válidas en Colombia.
+          </span>
+</div>
+</form>
+<!-- Pie del Modal -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Paso activo guardado localmente</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-title-md text-title-md hover:bg-surface-container-high transition-colors" onclick="cerrarModalProveedor()" type="button">
+            Cancelar
+          </button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary font-title-md text-title-md hover:bg-inverse-surface transition-colors" onclick="document.getElementById('formProveedor').requestSubmit()" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+            Guardar Cambios
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast de Confirmación Flotante -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none p-space-md rounded-xl bg-primary-container text-surface shadow-xl flex items-center gap-space-sm border-l-4 border-on-tertiary-container max-w-sm" id="toastNotificacion">
+<span class="material-symbols-outlined text-on-tertiary-container text-[24px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-surface" id="toastTitulo">Operación Exitosa</span>
+<span class="font-body-sm text-body-sm text-on-primary-container" id="toastMensaje">Registro de proveedor actualizado con éxito.</span>
+</div>
+</div>
+</div>
+<!-- Lógica Interactiva de la Vista -->
+<script>
+  // Control de Modales
+  function abrirModalProveedor(modo, nombreProveedor = '') {
+    const modal = document.getElementById('modalProveedor');
+    const titulo = document.getElementById('modalTitulo');
+    
+    if (modo === 'editar') {
+      titulo.textContent = 'Editar Proveedor: ' + nombreProveedor;
+    } else {
+      titulo.textContent = 'Registrar Nuevo Proveedor IT';
+      document.getElementById('formProveedor').reset();
+    }
+    
+    modal.classList.remove('hidden');
+    cambiarPestanaModal('datos-generales');
+  }
+
+  function cerrarModalProveedor() {
+    document.getElementById('modalProveedor').classList.add('hidden');
+  }
+
+  function cambiarPestanaModal(pestana) {
+    const pestañas = ['datos-generales', 'condiciones-comerciales', 'linea-credito'];
+    pestañas.forEach(p => {
+      const boton = document.getElementById('tab-' + p);
+      const panel = document.getElementById('panel-' + p);
+      if (p === pestana) {
+        boton.classList.add('text-on-surface', 'font-semibold', 'border-b-2', 'border-primary');
+        boton.classList.remove('text-secondary');
+        panel.classList.remove('hidden');
+      } else {
+        boton.classList.remove('text-on-surface', 'font-semibold', 'border-b-2', 'border-primary');
+        boton.classList.add('text-secondary');
+        panel.classList.add('hidden');
+      }
+    });
+  }
+
+  function guardarProveedor(e) {
+    e.preventDefault();
+    cerrarModalProveedor();
+    mostrarToast('Proveedor Almacenado', 'Los datos comerciales y cupo COP han sido actualizados en la base central.');
+  }
+
+  // Filtrado reactivo en cliente
+  function filtrarProveedores() {
+    const texto = (document.getElementById('filtroBusqueda').value || '').toLowerCase();
+    const cards = document.querySelectorAll('#directorioCards article');
+    let visibles = 0;
+
+    cards.forEach(card => {
+      const contenido = card.innerText.toLowerCase();
+      const coincide = contenido.includes(texto);
+      card.style.display = coincide ? 'flex' : 'none';
+      if (coincide) visibles++;
+    });
+
+    const contador = document.getElementById('conteoProveedores');
+    if (contador) {
+      contador.textContent = `Mostrando ${visibles} de 18 mayoristas autorizados`;
+    }
+  }
+
+  function limpiarFiltros() {
+    document.getElementById('filtroBusqueda').value = '';
+    document.getElementById('filtroTecnologia').value = 'todos';
+    document.getElementById('filtroPlazo').value = 'todos';
+    document.getElementById('filtroCalificacion').value = 'todos';
+    filtrarProveedores();
+    mostrarToast('Filtros Restablecidos', 'Se muestran todos los mayoristas autorizados.');
+  }
+
+  function exportarProveedores() {
+    mostrarToast('Generando Reporte', 'Descargando directorio comercial en formato XLSX compatible con ERP.');
+  }
+
+  function consultarCatalogo(nombre) {
+    mostrarToast('Catálogo Conectado', 'Abriendo lista de precios y stock en tiempo real de ' + nombre + '.');
+  }
+
+  function verHistorialOrdenes(nombre) {
+    mostrarToast('Historial de Compras', 'Cargando órdenes y facturas electrónicas emitidas con ' + nombre + '.');
+  }
+
+  // Notificaciones Toast
+  function mostrarToast(titulo, mensaje) {
+    const toast = document.getElementById('toastNotificacion');
+    document.getElementById('toastTitulo').textContent = titulo;
+    document.getElementById('toastMensaje').textContent = mensaje;
+
+    toast.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 3800);
+  }
+</script></main></div></body></html>
